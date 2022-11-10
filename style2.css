@@ -1,0 +1,32 @@
+/* h1::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+  } */
+h1::after {
+    content: " ♥♥♥";
+    color: cornflowerblue;
+}
+
+h1::before {
+    content: "♥♥♥ ";
+    color: cornflowerblue;
+}
+
+h2::after {
+    content: " - pridejau dar teksto";
+    color: rgb(237, 100, 157);
+}
+
+h2::first-letter {
+    font-size: 300%;
+    color: rgb(237, 100, 157);
+    background-color: darkcyan;
+}
+
+/* nav:not(:first-child)::before {
+    content: "//";
+  } */
+
+nav a:not(:first-child)::before {
+    content: "//";
+}
